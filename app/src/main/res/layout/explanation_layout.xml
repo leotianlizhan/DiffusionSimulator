@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/explanationToolbar"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/explanationToolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/diffusion_ex_title"
+                android:id="@+id/txtDiffusionExTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diffusion_explanation"
+                android:id="@+id/txtDiffusionEx"
+                android:layout_below="@+id/txtDiffusionExTitle"
+                android:layout_alignLeft="@+id/txtDiffusionExTitle"
+                android:layout_alignStart="@+id/txtDiffusionExTitle" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDiffusionEx"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic_diffusion"
+                android:id="@+id/picDiffusion" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/picDiffusion"
+                android:id="@+id/txtOsmosisExTitle"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/osmosis_ex_title"
+                android:layout_alignLeft="@id/txtDiffusionExTitle"
+                android:layout_alignStart="@id/txtDiffusionExTitle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtOsmosisExTitle"
+                android:id="@+id/txtOsmosisEx"
+                android:text="@string/osmosis_explanation"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtOsmosisEx"
+                android:paddingTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/osmosis"
+                android:id="@+id/picOsmosis" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

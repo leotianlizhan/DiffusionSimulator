@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Diffusion Simulator</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_diffusion">Diffusion</string>
+    <string name="title_text_view">Diffusion &amp; Osmosis</string>
+    <string name="diffusion_explanation">Due to probability, as particles concentrate in one area, they are more probable to collide, changing its direction towards other areas. Area with less particles would result in less collision, so particles would move to such area with no effort.</string>
+    <string name="osmosis_explanation">To be honest I made this app because I couldn\'t visualize osmosis, even though huh durr it\'s high concentration to low concentration. I don\'t like that, I like to visualize it, just like how I visualize diffusion with probability\nHowever as you can see my model doesn\'t work, as there is no clear pattern. Perhaps it is too simplified.</string>
+    <string name="osmosis_ex_title">Osmosis</string>
+    <string name="diffusion_ex_title">Diffusion</string>
+</resources>
